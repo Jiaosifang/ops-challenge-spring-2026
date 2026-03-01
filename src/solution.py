@@ -35,3 +35,4 @@ def ops_rolling_regbeta(input_path: str, window: int = 20) -> np.ndarray:
     ).collect()
     return res.to_numpy()
 
+# PR runner smoke test marker: no logic change / trial-2 2026-03-01T08:49:48.234069Z
