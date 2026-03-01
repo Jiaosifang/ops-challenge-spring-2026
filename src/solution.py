@@ -1,7 +1,6 @@
 import polars as pl
 import numpy as np
-# PR runner smoke test marker: no logic change
-
+# PR runner smoke test marker: no logic change / trial-1 2026-03-01T08:49:43.565777Z\n
 class ops:
     @staticmethod
     def rolling_regbeta(col_x_or_expr, col_y_or_expr, window: int) -> pl.Expr:
