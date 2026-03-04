@@ -26,7 +26,7 @@ poetry install
 ## Build ops
 
 * 在 `src/solution.py` 是参考的基础 pandas 写法，需要完成读取+计算两个步骤
-    * 注意只需要完成 `ops_rolling_regbeta()` 函数，且函数签名是 `(input_path: str, window: int = 20)`
+    * 注意只需要完成 `ops_ts_argmin()` 函数，且函数签名是 `(input_path: str, window: int = 20)`
     * 用于测试的 `main` 逻辑自行完成，提交时请只保留函数
     * Action 的 Runner 给大家配备了 20 个核心，所以在本地测试的时候也尽量把多核都用上，可以通过 `top` 或者 `htop` 来监测 CPU 利用率哦
     * 加速方法参考
@@ -38,10 +38,10 @@ poetry install
   ```bash
   cd testcase
   
-  # data_for_rolling_regbeta.parquet
+  # data_for_rolling_argmin.parquet
   gdown --fuzzy https://drive.google.com/file/d/1kyxl5bi0pJ_RZ-Dyqto9PE4Q1IU_BSQ6/view?usp=drive_link
   
-  # rolling_regbeta_v1.npy
+  # rolling_argmin_v1.npy
   gdown --fuzzy https://drive.google.com/file/d/1yaVW3CrW23-72Marz8pmBHU04LwCTO_V/view?usp=drive_link
   ```
 
@@ -53,9 +53,9 @@ poetry install
 
   ```bash
   python localTest.py \
-  	--entry_point ops_rolling_regbeta \
-  	--input_path ./testcase/data_for_rolling_regbeta.parquet \
-  	--ref_ans_path ./testcase/rolling_regbeta_v1.npy\
+  	--entry_point ops_ts_argmin \
+  	--input_path ./testcase/data_for_rolling_argmin.parquet \
+  	--ref_ans_path ./testcase/rolling_argmin_v1.npy\
   	--window 20
   ```
 
@@ -73,3 +73,4 @@ poetry install
 1. week 1：`rollling_rank()`
 2. week 2: `rolling_regbeta()`
     *  之后改为使用 float64 数据集
+3. week 3: `ts_argmin()`
