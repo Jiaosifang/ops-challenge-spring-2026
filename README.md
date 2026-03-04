@@ -31,7 +31,7 @@ poetry install
     * Action 的 Runner 给大家配备了 20 个核心，所以在本地测试的时候也尽量把多核都用上，可以通过 `top` 或者 `htop` 来监测 CPU 利用率哦
     * 加速方法参考
 
-* 测试数据可以从 [北大网盘](https://disk.pku.edu.cn/link/AA792794F02CAD41588EB1CCCB37085C18) 获取，需要校园网
+* 测试数据可以从 [北大网盘](https://disk.pku.edu.cn/link/AAE5DFFDBA5F024C0893C0EBDA39877328) 获取，需要校园网
 
 * 或者通过 Google Drive
 
@@ -39,10 +39,10 @@ poetry install
   cd testcase
   
   # data_for_rolling_argmin.parquet
-  gdown --fuzzy https://drive.google.com/file/d/1kyxl5bi0pJ_RZ-Dyqto9PE4Q1IU_BSQ6/view?usp=drive_link
+  gdown --fuzzy https://drive.google.com/file/d/16bBa_vO1CLfx7ffLvpicINfV6_Z5WswW/view?usp=drive_link
   
   # rolling_argmin_v1.npy
-  gdown --fuzzy https://drive.google.com/file/d/1yaVW3CrW23-72Marz8pmBHU04LwCTO_V/view?usp=drive_link
+  gdown --fuzzy https://drive.google.com/file/d/1Ij2dXy6DLZi9-An9QiiwSzFyexYt15KM/view?usp=drive_link
   ```
 
 * 以上数据集每周会更新～
