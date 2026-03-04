@@ -34,18 +34,18 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--entry_point",
-        default="ops_rolling_rank",
-        help="Entry point function name (default: ops_rolling_rank)"
+        default="ops_ts_argmin",
+        help="Entry point function name (default: ops_ts_argmin)"
     )
     parser.add_argument(
         "--input_path",
-        default="testcase/data_for_rolling_rank.parquet",
-        help="Path to input parquet file (default: testcase/data_for_rolling_rank.parquet)"
+        default="testcase/data_for_rolling_argmin.parquet",
+        help="Path to input parquet file (default: testcase/data_for_rolling_argmin.parquet)"
     )
     parser.add_argument(
         "--ref_ans_path",
-        default="testcase/rolling_rank_dense_v1.npy",
-        help="Path to reference answer npy file (default: testcase/rolling_rank_dense_v1.npy)"
+        default="testcase/rolling_argmin_v1.npy",
+        help="Path to reference answer npy file (default: testcase/rolling_argmin_v1.npy)"
     )
     parser.add_argument(
         "--window",
@@ -175,5 +175,4 @@ if __name__ == "__main__":
         logger.error(f"  Tolerance: rtol={args.rtol}, atol={args.atol}")
         logger.info("=" * 70)
         sys.exit(1)
-
 
