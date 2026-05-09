@@ -28,8 +28,6 @@ poetry install
 * 在 `src/solution.py` 是参考的基础 pandas 写法，需要完成读取+计算两个步骤
     * 注意只需要完成 `ops_ts_argmin()` 函数，且函数签名是 `(input_path: str, window: int = 20)`
     * 用于测试的 `main` 逻辑自行完成，提交时请只保留函数
-    * Action 的 Runner 给大家配备了 20 个核心，所以在本地测试的时候也尽量把多核都用上，可以通过 `top` 或者 `htop` 来监测 CPU 利用率哦
-    * 加速方法参考
 
 * 测试数据可以从 [北大网盘](https://disk.pku.edu.cn/link/AAE5DFFDBA5F024C0893C0EBDA39877328) 获取，需要校园网
 
